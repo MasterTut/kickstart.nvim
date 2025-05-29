@@ -1,7 +1,3 @@
---Custom
-vim.keymap.set('i', 'jj', '<Esc>', { noremap = true })
-vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
-
 --[[
 
 =====================================================================
@@ -340,6 +336,7 @@ require('lazy').setup({
         { '<leader>s', group = '[S]earch' },
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
+        { '<leader>T', group = '[T]erminal' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
@@ -911,7 +908,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'retrobox'
+      vim.cmd.colorscheme 'habamax'
     end,
   },
 
